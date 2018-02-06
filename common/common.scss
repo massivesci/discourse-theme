@@ -1,8 +1,94 @@
-//use Roboto font
+// Set font basics
+$sans-serif: "Libre Franklin", "-apple-system", ".SFNSText-Regular", "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
 html {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-family: $sans-serif;
 }
-body input, body button, body select, body textarea {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+body {
+    font-family: $sans-serif;
+    line-height: 1.5;
+}
+
+.btn,
+.date-time-container,
+#create-topic {
+    font-weight: bold;
+}
+
+.alert, .nav-pills>li>a, .btn {
+    border-radius: 4px;
+}
+
+.topic-body .regular {
+    margin-top: 0;
+}
+
+.badge-category-bg {
+    border-radius: 9999px;
+    top: 0;
+}
+
+.badge-category-parent-bg {
+    border-radius: 9999px;
+    left: 0px;
+}
+
+.badge-category {
+    padding: 0 0.5em 0 0.75em !important;
+}
+
+.list-controls .category-dropdown-menu .badge-wrapper.box {
+    line-height: 1.5;
+    margin-bottom: 0.25em;
+    opacity: .9;
+}
+
+.list-controls .category-dropdown-menu .badge-wrapper.box:hover {
+    opacity: 1;
+}
+
+.category-breadcrumb > .box > a:first-of-type {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+}
+
+.category-breadcrumb > .box > a:last-of-type {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+}
+
+.category-dropdown-menu {
+    padding: 0.25em;
+    margin-top: 0.25em;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+.extra-info-wrapper .topic-header-extra {
+    padding-top: 0px;
+}
+
+.post-controls .reply .d-button-label {
+    display: none;
+}
+
+.timeline-footer-controls .create {
+    background-color: $tertiary;
+    color: $secondary;
+}
+
+.timeline-footer-controls .create:after {
+    content: "Reply";
+    margin-left: 7px;
+}
+
+.date-time-container {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#create-topic {
+    background-color: $tertiary;
+    color: $secondary;
 }
